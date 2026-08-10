@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-chakra), ui-sans-serif, system-ui, sans-serif;
+  --color-accent: #00D2FF;
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  .tech-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.15) 0%, transparent 70%);
+    filter: blur(40px);
+  }
+
+  .line-accent {
+    height: 1px;
+    background: linear-gradient(90deg, #00D2FF 0%, transparent 100%);
+  }
+
+  .letter-spacing-widest {
+    letter-spacing: 0.25em;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.5), 0 0 20px rgba(0, 210, 255, 0.3);
+  }
+  
+  .text-glow-white {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  .box-glow {
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.1), inset 0 0 20px rgba(0, 210, 255, 0.05);
+  }
+}
+
+@media (pointer: fine) {
+  body, a, button, input, textarea, select, [role="button"], .cursor-pointer {
+    cursor: none !important;
+  }
+}
+
