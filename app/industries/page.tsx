@@ -9,7 +9,7 @@ import { INDUSTRIES } from '@/lib/industries-data';
 
 export const metadata: Metadata = {
   title: 'Industry Software Solutions | MuseCS South Africa',
-  description: 'Specialized software engineering solutions across banking, healthcare, telecommunications, retail, and logistics in South Africa.',
+  description: 'Specialized software engineering solutions across Banking, Insurance, Fintech, Healthcare and Telecommunications in South Africa.',
   alternates: {
     canonical: 'https://www.musecs.com/industries/'
   }
@@ -27,7 +27,7 @@ export default function IndustriesPage() {
             Industry Expertise & Domain Solutions
           </h1>
           <p className="text-xl text-gray-300 font-light max-w-3xl">
-            We don’t just write generic code. Our software engineering teams bring deep domain knowledge in South African banking, healthcare regulation, telecom CDR streaming, and retail logistics.
+            We don’t just write generic code. Our software engineering teams bring deep domain knowledge in Banking, Insurance, Fintech, Healthcare and Telecommunications.
           </p>
         </div>
       </section>

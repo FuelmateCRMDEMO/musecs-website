@@ -44,8 +44,12 @@ export function HeaderNav() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-7 text-xs font-semibold uppercase tracking-widest text-gray-300">
+        <nav className="hidden lg:flex items-center gap-6 text-xs font-semibold uppercase tracking-widest text-gray-300">
           
+          <Link href="/about" className="hover:text-accent transition-colors">
+            About
+          </Link>
+
           {/* Software Development Dropdown */}
           <div 
             className="relative py-6"
@@ -147,23 +151,20 @@ export function HeaderNav() {
             )}
           </div>
 
-          <Link href="/case-studies" className="hover:text-accent transition-colors">
-            Case Studies
-          </Link>
           <Link href="/industries" className="hover:text-accent transition-colors">
             Industries
           </Link>
           <Link href="/insights" className="hover:text-accent transition-colors">
             Insights
           </Link>
+          <Link href="/case-studies" className="hover:text-accent transition-colors">
+            Case Studies
+          </Link>
           <Link href="/research" className="hover:text-accent transition-colors">
             Research
           </Link>
           <Link href="/tools" className="hover:text-accent transition-colors">
             Tools
-          </Link>
-          <Link href="/about" className="hover:text-accent transition-colors">
-            About
           </Link>
           <Link href="/careers" className="hover:text-accent transition-colors">
             Careers
@@ -176,7 +177,7 @@ export function HeaderNav() {
             href="/contact" 
             className="px-5 py-2.5 bg-accent hover:bg-cyan-300 text-black font-bold uppercase tracking-widest text-[11px] transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(0,210,255,0.2)]"
           >
-            Contact Experts
+            Discuss Requirements
           </Link>
         </div>
 
@@ -198,14 +199,14 @@ export function HeaderNav() {
             <Link onClick={() => setMobileOpen(false)} href="/" className="block py-1.5 text-gray-200">
               Home
             </Link>
+            <Link onClick={() => setMobileOpen(false)} href="/about" className="block py-1.5 text-gray-200">
+              About MuseCS
+            </Link>
             <Link onClick={() => setMobileOpen(false)} href="/software-development" className="block py-1.5 text-accent font-semibold">
               Software Development Hub
             </Link>
             <Link onClick={() => setMobileOpen(false)} href="/software-development-team-augmentation" className="block py-1.5 text-accent font-semibold">
               Team Augmentation Hub
-            </Link>
-            <Link onClick={() => setMobileOpen(false)} href="/case-studies" className="block py-1.5 text-gray-200">
-              Case Studies
             </Link>
             <Link onClick={() => setMobileOpen(false)} href="/industries" className="block py-1.5 text-gray-200">
               Industries
@@ -213,14 +214,14 @@ export function HeaderNav() {
             <Link onClick={() => setMobileOpen(false)} href="/insights" className="block py-1.5 text-gray-200">
               Insights & Knowledge Centre
             </Link>
+            <Link onClick={() => setMobileOpen(false)} href="/case-studies" className="block py-1.5 text-gray-200">
+              Case Studies
+            </Link>
             <Link onClick={() => setMobileOpen(false)} href="/research" className="block py-1.5 text-gray-200">
               Research & Reports
             </Link>
             <Link onClick={() => setMobileOpen(false)} href="/tools" className="block py-1.5 text-gray-200">
               Calculators & Tools
-            </Link>
-            <Link onClick={() => setMobileOpen(false)} href="/about" className="block py-1.5 text-gray-200">
-              About MuseCS
             </Link>
             <Link onClick={() => setMobileOpen(false)} href="/careers" className="block py-1.5 text-gray-200">
               Careers

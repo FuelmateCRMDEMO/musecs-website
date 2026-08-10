@@ -16,7 +16,10 @@ import {
   Building2,
   ArrowRight,
   ShieldCheck,
-  CheckCircle2
+  CheckCircle2,
+  Clock,
+  Sparkles,
+  FileCheck
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -45,7 +48,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/80 via-transparent to-[#050505]"></div>
       </div>
 
-      {/* Modern Unified Navigation Header */}
+      {/* Navigation Header */}
       <HeaderNav />
 
       <main className="relative z-10 pt-8">
@@ -62,7 +65,7 @@ export default function Home() {
               >
                 <div className="w-12 h-[1px] bg-accent"></div>
                 <span className="text-accent text-xs font-mono font-bold uppercase tracking-widest">
-                  South African Software Engineering Consultancy
+                  Premier South African Software Engineering Consultancy
                 </span>
               </motion.div>
               
@@ -82,103 +85,219 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed font-light"
               >
-                Muse Consultancy Services (MuseCS) supplies senior software engineering capability, cloud microservice architecture, and dedicated development teams to ambitious organisations across South Africa and globally.
+                Muse Consultancy Services (MuseCS) delivers bespoke custom software engineering, legacy system modernisation, and senior software developer team augmentation to ambitious organisations across South Africa and globally.
               </motion.p>
               
+              {/* Primary Action CTAs */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className="flex flex-wrap items-center justify-start gap-4 pt-4"
+                className="space-y-4 pt-2"
               >
-                <Link 
-                  href="/software-development" 
-                  className="px-8 py-4 bg-accent hover:bg-cyan-300 text-black font-bold uppercase tracking-widest text-xs transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,210,255,0.25)]"
-                >
-                  Software Development Hub <ArrowRight size={16} />
-                </Link>
-                <Link 
-                  href="/software-development-team-augmentation" 
-                  className="px-8 py-4 bg-black/80 hover:bg-white/10 text-white border border-gray-800 font-bold uppercase tracking-widest text-xs transition-all flex items-center justify-center gap-2"
-                >
-                  Team Augmentation Hub <ArrowRight size={16} />
-                </Link>
+                <div className="flex flex-wrap items-center justify-start gap-4">
+                  <Link 
+                    href="/contact?type=software-development" 
+                    className="px-8 py-4 bg-accent hover:bg-cyan-300 text-black font-bold uppercase tracking-widest text-xs transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,210,255,0.25)]"
+                  >
+                    Discuss Software Development Requirement <ArrowRight size={16} />
+                  </Link>
+                  <Link 
+                    href="/contact?type=team-augmentation" 
+                    className="px-8 py-4 bg-black/80 hover:bg-white/10 text-white border border-gray-800 font-bold uppercase tracking-widest text-xs transition-all flex items-center justify-center gap-2"
+                  >
+                    Discuss Team Augmentation <Users size={16} />
+                  </Link>
+                </div>
+
+                <div className="flex items-center gap-6 font-mono text-[11px] text-gray-400">
+                  <Link href="/software-development" className="hover:text-accent transition-colors flex items-center gap-1">
+                    Explore Software Development Hub <ChevronRight size={12} />
+                  </Link>
+                  <span className="text-gray-700">|</span>
+                  <Link href="/software-development-team-augmentation" className="hover:text-accent transition-colors flex items-center gap-1">
+                    Explore Team Augmentation Hub <ChevronRight size={12} />
+                  </Link>
+                </div>
               </motion.div>
             </div>
             
-            {/* Primary Pillars Highlight Cards */}
+            {/* Commercial Pillar Highlight Cards */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
               className="lg:col-span-4 space-y-4"
             >
-              <Link 
-                href="/software-development"
-                className="p-6 bg-[#080808] border border-gray-800 hover:border-accent transition-all block group space-y-3"
-              >
+              <div className="p-6 bg-[#080808] border border-gray-800 hover:border-accent transition-all block group space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-mono text-accent font-bold uppercase tracking-widest">Pillar 01</span>
+                  <span className="text-[10px] font-mono text-accent font-bold uppercase tracking-widest">Commercial Path A</span>
                   <Code2 size={20} className="text-accent group-hover:scale-110 transition-transform" />
                 </div>
                 <h3 className="text-xl font-bold text-white group-hover:text-accent transition-colors">
                   Software Development
                 </h3>
                 <p className="text-xs text-gray-400 font-light leading-relaxed">
-                  Bespoke custom software engineering, legacy system modernisation, microservice architecture, and AI integration.
+                  Turnkey custom engineering, cloud microservices, legacy refactoring, and AI systems built under strict TDD and DDD standards.
                 </p>
-                <span className="text-xs font-mono font-bold text-accent flex items-center gap-1 pt-1">
-                  Explore Pillar <ChevronRight size={14} />
-                </span>
-              </Link>
+                <div className="flex items-center justify-between pt-2 border-t border-gray-800/80">
+                  <Link href="/software-development" className="text-[11px] font-mono text-gray-400 hover:text-white">
+                    View Capabilities
+                  </Link>
+                  <Link href="/contact?type=software-development" className="text-[11px] font-mono font-bold text-accent flex items-center gap-1">
+                    Submit Spec <ArrowRight size={12} />
+                  </Link>
+                </div>
+              </div>
 
-              <Link 
-                href="/software-development-team-augmentation"
-                className="p-6 bg-[#080808] border border-gray-800 hover:border-accent transition-all block group space-y-3"
-              >
+              <div className="p-6 bg-[#080808] border border-gray-800 hover:border-accent transition-all block group space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-mono text-accent font-bold uppercase tracking-widest">Pillar 02</span>
+                  <span className="text-[10px] font-mono text-accent font-bold uppercase tracking-widest">Commercial Path B</span>
                   <Users size={20} className="text-accent group-hover:scale-110 transition-transform" />
                 </div>
                 <h3 className="text-xl font-bold text-white group-hover:text-accent transition-colors">
                   Team Augmentation
                 </h3>
                 <p className="text-xs text-gray-400 font-light leading-relaxed">
-                  Inject senior South African developers, architects, and dedicated squads into your agile workflow in under 5 days.
+                  Inject senior South African developers, tech leads, and dedicated engineering squads into your agile workflow in under 5 days.
                 </p>
-                <span className="text-xs font-mono font-bold text-accent flex items-center gap-1 pt-1">
-                  Explore Pillar <ChevronRight size={14} />
-                </span>
-              </Link>
+                <div className="flex items-center justify-between pt-2 border-t border-gray-800/80">
+                  <Link href="/software-development-team-augmentation" className="text-[11px] font-mono text-gray-400 hover:text-white">
+                    View Developer Roles
+                  </Link>
+                  <Link href="/contact?type=team-augmentation" className="text-[11px] font-mono font-bold text-accent flex items-center gap-1">
+                    Request Developers <ArrowRight size={12} />
+                  </Link>
+                </div>
+              </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Executive Authority & Methodology Section */}
-        <section id="about" className="py-24 px-6 relative border-t border-gray-800 bg-[#080808]/60">
-          <div className="max-w-5xl mx-auto space-y-8">
+        {/* Commercial Proof & Methodology Highlights */}
+        <section id="about" className="py-20 px-6 relative border-t border-gray-800 bg-[#080808]/60">
+          <div className="max-w-6xl mx-auto space-y-12">
              <div className="flex items-center justify-center gap-4">
                 <div className="w-8 h-[1px] bg-accent"></div>
-                <h2 className="text-xs font-bold font-mono uppercase tracking-widest text-accent">Our Engineering Methodology</h2>
+                <h2 className="text-xs font-bold font-mono uppercase tracking-widest text-accent">Our Commercial Engagement Promise</h2>
                 <div className="w-8 h-[1px] bg-accent"></div>
              </div>
-             <p className="text-2xl md:text-4xl text-gray-300 leading-relaxed font-light text-center">
-               We combine <span className="text-white font-medium">Domain-Driven Design (DDD)</span>, test-driven development (TDD), and cloud-native microservices to reshape and enhance your software development life cycle. Our senior South African architects fuel every stage of execution.
+             <p className="text-2xl md:text-3xl text-gray-300 leading-relaxed font-light text-center max-w-4xl mx-auto">
+               We combine <span className="text-white font-medium">Domain-Driven Design (DDD)</span>, test-driven development (TDD), and cloud-native microservices to guarantee sub-100ms API throughput and zero technical debt for South African enterprises.
              </p>
-             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 font-mono text-xs text-gray-400">
-               <div className="p-4 bg-black border border-gray-800 space-y-1">
-                 <span className="text-accent font-bold">10+ YEARS</span>
+             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 font-mono text-xs text-gray-400">
+               <div className="p-5 bg-black border border-gray-800 space-y-1.5">
+                 <span className="text-accent font-bold text-sm block">10+ YEARS</span>
                  <p className="text-gray-300 font-sans text-xs">Enterprise Software Delivery Experience</p>
                </div>
-               <div className="p-4 bg-black border border-gray-800 space-y-1">
-                 <span className="text-accent font-bold">UNDER 5 DAYS</span>
-                 <p className="text-gray-300 font-sans text-xs">Developer Team Augboarding Time</p>
+               <div className="p-5 bg-black border border-gray-800 space-y-1.5">
+                 <span className="text-accent font-bold text-sm block">&lt; 5 DAYS</span>
+                 <p className="text-gray-300 font-sans text-xs">Developer Team Augmentation Onboarding SLA</p>
                </div>
-               <div className="p-4 bg-black border border-gray-800 space-y-1">
-                 <span className="text-accent font-bold">100% POPIA</span>
+               <div className="p-5 bg-black border border-gray-800 space-y-1.5">
+                 <span className="text-accent font-bold text-sm block">100% POPIA</span>
                  <p className="text-gray-300 font-sans text-xs">Compliant South African Data Security</p>
                </div>
+               <div className="p-5 bg-black border border-gray-800 space-y-1.5">
+                 <span className="text-accent font-bold text-sm block">4-HOUR SLA</span>
+                 <p className="text-gray-300 font-sans text-xs">Senior Architect Initial Response Time</p>
+               </div>
              </div>
+          </div>
+        </section>
+
+        {/* Differentiated Engagement Journeys (How it Works) */}
+        <section className="py-24 px-6 border-t border-gray-800 bg-black">
+          <div className="max-w-7xl mx-auto space-y-16">
+            <div className="space-y-3 max-w-3xl">
+              <span className="text-xs font-mono font-bold uppercase tracking-widest text-accent">
+                Transparent Engagement Models
+              </span>
+              <h2 className="text-3xl md:text-5xl font-light text-white tracking-tight">
+                How Commercial Engagements Work at MuseCS
+              </h2>
+              <p className="text-gray-300 font-light text-base leading-relaxed">
+                Whether you need a complete software platform engineered or senior developers embedded into your agile sprints, our delivery processes are structured, predictable, and transparent.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              
+              {/* Pathway A Process */}
+              <div className="p-8 bg-[#080808] border border-gray-800 space-y-8">
+                <div className="flex items-center justify-between border-b border-gray-800 pb-4">
+                  <div>
+                    <span className="text-[10px] font-mono text-accent uppercase font-bold tracking-widest">Journey Path A</span>
+                    <h3 className="text-2xl font-bold text-white">Software Development Process</h3>
+                  </div>
+                  <Code2 size={28} className="text-accent" />
+                </div>
+
+                <div className="space-y-6 font-mono text-xs">
+                  {[
+                    { step: '01', title: 'Domain Discovery & Spec Review', desc: 'Review of technical requirements, domain boundaries, and POPIA/security constraints.' },
+                    { step: '02', title: 'Architectural Blueprinting', desc: 'Designing microservice interfaces, schema models, API gateways, and CI/CD pipelines.' },
+                    { step: '03', title: 'Iterative TDD Sprints', desc: 'Bi-weekly working software releases written under strict TDD with >85% test coverage.' },
+                    { step: '04', title: 'Production Handover & SLA', desc: 'Zero-downtime deployment, automated telemetry monitoring setup, and codebase ownership.' }
+                  ].map((s) => (
+                    <div key={s.step} className="flex gap-4 items-start">
+                      <span className="text-accent font-bold text-sm bg-accent/10 border border-accent/20 px-2.5 py-1 shrink-0">{s.step}</span>
+                      <div className="space-y-1 font-sans">
+                        <h4 className="text-white font-semibold text-sm">{s.title}</h4>
+                        <p className="text-gray-400 text-xs font-light">{s.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pt-4 border-t border-gray-800">
+                  <Link 
+                    href="/contact?type=software-development" 
+                    className="w-full py-3.5 bg-accent hover:bg-cyan-300 text-black font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-2 transition-all font-mono"
+                  >
+                    Discuss Software Requirement <ArrowRight size={14} />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Pathway B Process */}
+              <div className="p-8 bg-[#080808] border border-gray-800 space-y-8">
+                <div className="flex items-center justify-between border-b border-gray-800 pb-4">
+                  <div>
+                    <span className="text-[10px] font-mono text-accent uppercase font-bold tracking-widest">Journey Path B</span>
+                    <h3 className="text-2xl font-bold text-white">Team Augmentation Process</h3>
+                  </div>
+                  <Users size={28} className="text-accent" />
+                </div>
+
+                <div className="space-y-6 font-mono text-xs">
+                  {[
+                    { step: '01', title: 'Technical Role & Stack Definition', desc: 'Specify exact developer seniorities, frameworks, duration, and squad headcount.' },
+                    { step: '02', title: 'Vetted Candidate Matching (<48h)', desc: 'Selection of top 1% South African developers evaluated on live coding and architecture.' },
+                    { step: '03', title: 'Client Technical Interview', desc: 'Interview and code review with your engineering managers to ensure culture & technical fit.' },
+                    { step: '04', title: 'Seamless Onboarding (<5 Days)', desc: 'Rapid security clearance, IDE setup, and integration into your daily standups and Jira.' }
+                  ].map((s) => (
+                    <div key={s.step} className="flex gap-4 items-start">
+                      <span className="text-accent font-bold text-sm bg-accent/10 border border-accent/20 px-2.5 py-1 shrink-0">{s.step}</span>
+                      <div className="space-y-1 font-sans">
+                        <h4 className="text-white font-semibold text-sm">{s.title}</h4>
+                        <p className="text-gray-400 text-xs font-light">{s.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pt-4 border-t border-gray-800">
+                  <Link 
+                    href="/contact?type=team-augmentation" 
+                    className="w-full py-3.5 bg-black border border-gray-800 hover:border-accent text-white hover:text-accent font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-2 transition-all font-mono"
+                  >
+                    Discuss Developer Requirements <Users size={14} />
+                  </Link>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
 
@@ -247,7 +366,7 @@ export default function Home() {
                 "Java 21", "Spring Boot", "TypeScript", "Next.js 15", "React 19",
                 "Python", "PostgreSQL", "Apache Kafka", "Docker", "Kubernetes",
                 "AWS", "Azure", "Redis", "Terraform", "Gemini API"
-              ].map((tech, i) => (
+              ].map((tech) => (
                 <div 
                   key={tech}
                   className="flex items-center justify-center p-6 bg-[#050505] hover:bg-accent/5 transition-colors"
@@ -271,10 +390,10 @@ export default function Home() {
         {/* CTA Contact Section */}
         <section id="contact" className="relative z-10 grid grid-cols-1 md:grid-cols-2 border-t border-gray-800">
           <div className="p-12 md:p-20 border-b md:border-b-0 md:border-r border-gray-800 flex flex-col justify-between bg-[#080808]">
-            <span className="text-xs font-mono font-bold text-accent uppercase tracking-widest mb-8">Action // Connect</span>
+            <span className="text-xs font-mono font-bold text-accent uppercase tracking-widest mb-8">Direct Technical Contact // Sandton</span>
             <div>
               <h2 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-6">Ready to scale your<br/>engineering velocity?</h2>
-              <p className="text-gray-300 font-light max-w-md mb-8">Connect directly with senior software architects in Sandton, Johannesburg.</p>
+              <p className="text-gray-300 font-light max-w-md mb-8">Connect directly with practicing software architects in Sandton, Johannesburg to evaluate your software requirement or developer team needs.</p>
               
               <div className="flex flex-col space-y-4 font-mono text-xs">
                 <a href="mailto:sales@musecs.com" className="flex items-center gap-3 text-gray-300 hover:text-accent transition-colors">
@@ -304,7 +423,7 @@ export default function Home() {
 
       </main>
 
-      {/* Global Unified Footer */}
+      {/* Footer */}
       <Footer />
     </div>
   );

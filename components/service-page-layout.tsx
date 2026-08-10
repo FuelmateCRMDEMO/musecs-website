@@ -67,6 +67,10 @@ export interface ServicePageProps {
   relatedPages: { title: string; url: string; description: string }[];
   category?: string;
   contentSections?: ContentSection[];
+  ctaButtonText?: string;
+  ctaHeading?: string;
+  ctaType?: string;
+  ctaUrl?: string;
   children?: React.ReactNode;
 }
 
@@ -84,8 +88,13 @@ export function ServicePageLayout({
   relatedPages,
   category = 'Software Development',
   contentSections,
+  ctaButtonText = 'Schedule Technical Review',
+  ctaHeading = 'Ready to elevate your engineering velocity?',
+  ctaType = 'software-development',
+  ctaUrl,
   children
 }: ServicePageProps) {
+  const targetCtaUrl = ctaUrl || `/contact?type=${ctaType}`;
   const serviceSchema = generateServiceSchema(title, overview[0] || subtitle, canonicalUrl, category);
   const faqSchema = generateFAQSchema(faqs);
 
@@ -114,14 +123,14 @@ export function ServicePageLayout({
 
             <div className="flex flex-wrap gap-4 pt-4">
               <Link 
-                href="/contact" 
-                className="px-8 py-4 bg-accent hover:bg-cyan-300 text-black font-bold uppercase tracking-widest text-xs transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(0,210,255,0.3)]"
+                href={targetCtaUrl} 
+                className="px-8 py-4 bg-accent hover:bg-cyan-300 text-black font-bold uppercase tracking-widest text-xs transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(0,210,255,0.3)] font-mono"
               >
-                Schedule Technical Review <ArrowRight size={16} />
+                {ctaButtonText} <ArrowRight size={16} />
               </Link>
               <Link 
                 href="#faqs" 
-                className="px-8 py-4 bg-black/60 hover:bg-white/10 text-white border border-gray-800 font-bold uppercase tracking-widest text-xs transition-all flex items-center gap-2"
+                className="px-8 py-4 bg-black/60 hover:bg-white/10 text-white border border-gray-800 font-bold uppercase tracking-widest text-xs transition-all flex items-center gap-2 font-mono"
               >
                 Read FAQs
               </Link>
@@ -375,16 +384,16 @@ export function ServicePageLayout({
         {/* Lead Capture CTA Section */}
         <section className="p-12 bg-accent text-black flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-2xl">
-            <h3 className="text-3xl md:text-4xl font-bold tracking-tight">Ready to elevate your engineering velocity?</h3>
+            <h3 className="text-3xl md:text-4xl font-bold tracking-tight">{ctaHeading}</h3>
             <p className="text-black/80 text-base font-medium">
-              Connect directly with senior software architects at MuseCS to review your system requirements or request dedicated developers.
+              Connect directly with senior software architects in Sandton to review your system requirements or evaluate developer team availability.
             </p>
           </div>
           <Link 
-            href="/contact" 
-            className="px-8 py-4 bg-black text-white hover:bg-slate-900 font-bold uppercase tracking-widest text-xs transition-all shrink-0 flex items-center gap-2 shadow-2xl"
+            href={targetCtaUrl} 
+            className="px-8 py-4 bg-black text-white hover:bg-slate-900 font-bold uppercase tracking-widest text-xs transition-all shrink-0 flex items-center gap-2 shadow-2xl font-mono"
           >
-            Request Technical Consultation <Send size={16} />
+            {ctaButtonText} <Send size={16} />
           </Link>
         </section>
 

@@ -46,6 +46,9 @@ export default function SoftwareDeveloperAugmentationPage() {
         { title: 'Dedicated Development Teams', url: '/software-development-team-augmentation/dedicated-development-teams', description: 'Full autonomous engineering cells.' },
         { title: 'Team Augmentation Cost Guide', url: '/software-development-team-augmentation/team-augmentation-cost', description: 'Transparent rate comparisons.' }
       ]}
+      ctaButtonText="Discuss Developer Requirements"
+      ctaHeading="Need senior developers in under 5 days?"
+      ctaType="team-augmentation"
     />
   );
 }

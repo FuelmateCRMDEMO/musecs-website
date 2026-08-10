@@ -204,6 +204,9 @@ export default function CustomSoftwareDevelopmentPage() {
           description: 'Inject senior full-stack developers directly into your custom software project.'
         }
       ]}
+      ctaButtonText="Discuss Custom Software Project"
+      ctaHeading="Ready to engineer your custom software platform?"
+      ctaType="software-development"
     />
   );
 }

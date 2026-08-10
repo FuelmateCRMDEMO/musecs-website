@@ -111,7 +111,7 @@ export default function SoftwareDevelopmentConsultingPage() {
           id: 'south-african-consulting-context',
           title: 'South African Enterprise Software Consulting Context',
           paragraphs: [
-            'South African organisations in banking, telecommunications, healthcare, and retail face distinct technical and regulatory conditions. Software systems must comply with POPIA (Protection of Personal Information Act), interface with legacy mainframe ledgers, and maintain high performance across local cloud regions (AWS Africa - Cape Town, Azure South Africa North).',
+            'South African organisations in Banking, Insurance, Fintech, Healthcare and Telecommunications face distinct technical and regulatory conditions. Software systems must comply with POPIA (Protection of Personal Information Act), interface with legacy mainframe ledgers, and maintain high performance across local cloud regions (AWS Africa - Cape Town, Azure South Africa North).',
             'MuseCS provides specialized software development consulting tailored directly to the South African enterprise landscape. Headquartered in Sandton, Johannesburg, our software architects bring direct experience navigating local regulatory requirements and enterprise IT governance frameworks.'
           ]
         }
