@@ -47,11 +47,11 @@ export default function PeoplePage() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-gray-800 pb-8">
             <div className="space-y-2">
               <span className="text-xs font-mono font-bold text-accent uppercase tracking-widest">Founder & Managing Director</span>
-              <h2 className="text-3xl font-light text-white">Clinton Powell</h2>
+              <h2 className="text-3xl font-light text-white">Sudhir Mishra</h2>
               <p className="text-sm text-gray-400 font-mono">Software Architecture, Developer Vetting & Enterprise Engineering Strategy</p>
             </div>
             <Link
-              href="/about/people/clinton-powell"
+              href="/about/people/sudhir-mishra"
               className="px-6 py-3 bg-accent hover:bg-cyan-300 text-black font-bold uppercase tracking-widest text-xs transition-all flex items-center justify-center gap-2 self-start md:self-auto"
             >
               View Full Profile <ArrowRight size={14} />

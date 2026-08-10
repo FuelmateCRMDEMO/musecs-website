@@ -685,7 +685,7 @@ Without formal change management protocols, these small additions accumulate int
   },
 
   // ==========================================
-  // PILLAR 4: MUSE PERSPECTIVES (CLINTON POWELL)
+  // PILLAR 4: MUSE PERSPECTIVES (SUDHIR MISHRA)
   // ==========================================
   {
     slug: 'abandoning-leetcode-for-real-world-engineering-evaluations',
@@ -694,10 +694,10 @@ Without formal change management protocols, these small additions accumulate int
     content_type: 'Executive Thought Leadership',
     audience: 'Technical Founders, CTOs, Engineering Leaders',
     lifecycle_stage: 'Industry Commentary & Hiring Philosophy',
-    author: 'Clinton Powell',
+    author: 'Sudhir Mishra',
     author_title: 'Founder & Managing Director, Muse Consultancy Services',
     reading_time: '8 min read',
-    summary: 'Clinton Powell shares why Muse replaced traditional theoretical interview puzzles with live pair programming on actual production codebases and system design scenarios.',
+    summary: 'Sudhir Mishra shares why Muse replaced traditional theoretical interview puzzles with live pair programming on actual production codebases and system design scenarios.',
     date: 'August 2026',
     pillar_id: 'perspectives',
     tags: ['Thought Leadership', 'Hiring', 'Engineering Culture', 'Muse Perspective'],
@@ -708,15 +708,15 @@ category: "Muse Perspectives"
 content_type: "Executive Thought Leadership"
 audience: "Technical Founders, CTOs, Engineering Leaders"
 lifecycle_stage: "Industry Commentary & Hiring Philosophy"
-author: "Clinton Powell"
+author: "Sudhir Mishra"
 author_title: "Founder & Managing Director, Muse Consultancy Services"
 reading_time: "8 min read"
-summary: "Clinton Powell shares why Muse replaced traditional theoretical interview puzzles with live pair programming on actual production codebases and system design scenarios."
+summary: "Sudhir Mishra shares why Muse replaced traditional theoretical interview puzzles with live pair programming on actual production codebases and system design scenarios."
 ---
 
 # Why We Abandoned Standard Coding Tests for Real-World Systems Architecture Exercises
 
-**By Clinton Powell, Founder & Managing Director, Muse Consultancy Services**
+**By Sudhir Mishra, Founder & Managing Director, Muse Consultancy Services**
 
 When I founded **Muse Consultancy Services**, our core promise to clients was simple yet uncompromising: *We supply elite software development capability.*
 
@@ -755,10 +755,10 @@ When you bring a Muse engineer into your team, you don't get an algorithm contes
     content_type: 'Executive Thought Leadership',
     audience: 'Founders, VC Tech Partners, CTOs',
     lifecycle_stage: 'Strategic Investment & Scaling',
-    author: 'Clinton Powell',
+    author: 'Sudhir Mishra',
     author_title: 'Founder & Managing Director, Muse Consultancy Services',
     reading_time: '10 min read',
-    summary: 'Clinton Powell explains how quick-and-dirty MVP code creates hidden technical debt liabilities during M&A due diligence, cutting company valuations significantly.',
+    summary: 'Sudhir Mishra explains how quick-and-dirty MVP code creates hidden technical debt liabilities during M&A due diligence, cutting company valuations significantly.',
     date: 'August 2026',
     pillar_id: 'perspectives',
     tags: ['Strategy', 'Startups', 'Valuation', 'Technical Due Diligence'],
@@ -769,15 +769,15 @@ category: "Muse Perspectives"
 content_type: "Executive Thought Leadership"
 audience: "Founders, VC Tech Partners, CTOs"
 lifecycle_stage: "Strategic Investment & Scaling"
-author: "Clinton Powell"
+author: "Sudhir Mishra"
 author_title: "Founder & Managing Director, Muse Consultancy Services"
 reading_time: "10 min read"
-summary: "Clinton Powell explains how quick-and-dirty MVP code creates hidden technical debt liabilities during M&A due diligence, cutting company valuations significantly."
+summary: "Sudhir Mishra explains how quick-and-dirty MVP code creates hidden technical debt liabilities during M&A due diligence, cutting company valuations significantly."
 ---
 
 # The MVP Valuation Trap: How Technical Shortcuts Destroy Enterprise Value at Series B
 
-**By Clinton Powell, Founder & Managing Director, Muse Consultancy Services**
+**By Sudhir Mishra, Founder & Managing Director, Muse Consultancy Services**
 
 In the early startup phase, the standard mantra is *"Move fast and break things."* Founders are encouraged to throw together rapid Minimum Viable Products (MVPs) using low-code shortcuts, unindexed databases, and copy-pasted microservices just to prove product-market fit.
 
@@ -810,10 +810,10 @@ Invest in clean architecture early—it is the highest-return financial decision
     content_type: 'Regional Industry Analysis',
     audience: 'Enterprise IT Executives, Global CTOs, Regional Directors',
     lifecycle_stage: 'Global Team Expansion & Augmentation',
-    author: 'Clinton Powell',
+    author: 'Sudhir Mishra',
     author_title: 'Founder & Managing Director, Muse Consultancy Services',
     reading_time: '12 min read',
-    summary: 'Clinton Powell explores why South Africa—Johannesburg and Cape Town—has emerged as a premier global software engineering hub for European and North American enterprises.',
+    summary: 'Sudhir Mishra explores why South Africa—Johannesburg and Cape Town—has emerged as a premier global software engineering hub for European and North American enterprises.',
     date: 'August 2026',
     pillar_id: 'perspectives',
     tags: ['South Africa', 'Offshoring', 'Team Augmentation', 'Engineering Leadership'],
@@ -824,15 +824,15 @@ category: "Muse Perspectives"
 content_type: "Regional Industry Analysis"
 audience: "Enterprise IT Executives, Global CTOs, Regional Directors"
 lifecycle_stage: "Global Team Expansion & Augmentation"
-author: "Clinton Powell"
+author: "Sudhir Mishra"
 author_title: "Founder & Managing Director, Muse Consultancy Services"
 reading_time: "12 min read"
-summary: "Clinton Powell explores why South Africa—Johannesburg and Cape Town—has emerged as a premier global software engineering hub for European and North American enterprises."
+summary: "Sudhir Mishra explores why South Africa—Johannesburg and Cape Town—has emerged as a premier global software engineering hub for European and North American enterprises."
 ---
 
 # The South African Tech Talent Imperative: Building and Scaling World-Class Engineering Hubs Regionally
 
-**By Clinton Powell, Founder & Managing Director, Muse Consultancy Services**
+**By Sudhir Mishra, Founder & Managing Director, Muse Consultancy Services**
 
 Over the past decade, global software engineering leaders in the UK, Europe, and North America have realized that traditional nearshoring and offshoring destinations often come with significant trade-offs: massive time-zone friction, language nuances, and high staff turnover.
 

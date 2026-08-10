@@ -25,9 +25,9 @@ export default function BuildVsBuyVsAugmentPage() {
     'url': 'https://www.musecs.com/insights/decision-guides/build-vs-buy-vs-augment/',
     'author': {
       '@type': 'Person',
-      'name': 'Clinton Powell',
+      'name': 'Sudhir Mishra',
       'jobTitle': 'Founder & Managing Director',
-      'url': 'https://www.musecs.com/about/people/clinton-powell/'
+      'url': 'https://www.musecs.com/about/people/sudhir-mishra/'
     },
     'publisher': {
       '@type': 'Organization',

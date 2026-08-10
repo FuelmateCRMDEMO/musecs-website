@@ -96,15 +96,15 @@ export default function AboutPage() {
           <div className="pt-4 border-t border-gray-800/80 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 bg-black/50 border border-gray-800 space-y-3">
               <span className="text-xs font-mono text-accent">Founder & Managing Director</span>
-              <h3 className="text-xl font-medium text-white">Clinton Powell</h3>
+              <h3 className="text-xl font-medium text-white">Sudhir Mishra</h3>
               <p className="text-xs text-gray-400 font-light leading-relaxed">
                 Directs software architecture standards, technical due diligence, and developer talent evaluation across all enterprise client engagements.
               </p>
               <Link
-                href="/about/people/clinton-powell"
+                href="/about/people/sudhir-mishra"
                 className="text-xs font-mono font-bold text-accent hover:underline flex items-center gap-1 pt-2"
               >
-                View Clinton Powell Profile <ArrowRight size={12} />
+                View Sudhir Mishra Profile <ArrowRight size={12} />
               </Link>
             </div>
 

@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools',
     '/about',
     '/about/people',
-    '/about/people/clinton-powell',
+    '/about/people/sudhir-mishra',
     '/careers',
     '/contact',
   ];

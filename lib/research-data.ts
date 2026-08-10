@@ -73,7 +73,7 @@ Empirical analysis reveals clear technology dominance within South African enter
     title: 'Enterprise Software Development Team Augmentation Adoption & Operational Index',
     category: 'Team Augmentation & Delivery Models',
     publish_date: 'January 2026',
-    author: 'Clinton Powell, Founder & Managing Director',
+    author: 'Sudhir Mishra, Founder & Managing Director',
     status: 'Published',
     summary: 'A definitive operational benchmark examining why top South African enterprises choose software development team augmentation over permanent hiring and fixed-scope outsourcing.',
     key_findings: [
@@ -164,7 +164,7 @@ Because 85% of enterprise software roles require Senior capability, organization
     title: 'South African Software Engineering Compensation & Contracting Rate Benchmark 2026',
     category: 'Compensation & Rate Benchmarks',
     publish_date: 'February 2026',
-    author: 'Clinton Powell, Founder & Managing Director',
+    author: 'Sudhir Mishra, Founder & Managing Director',
     status: 'Published',
     summary: 'Comprehensive market rate card and permanent salary benchmarking for software developers, architects, and DevOps engineers in South Africa.',
     key_findings: [
@@ -216,7 +216,7 @@ While individual contractor hiring appears flexible, it exposes enterprises to a
     title: 'MuseCS Enterprise Software Engineering & Team Augmentation Frameworks',
     category: 'Original Decision & Capability Frameworks',
     publish_date: 'February 2026',
-    author: 'Clinton Powell & Muse Architecture Practice',
+    author: 'Sudhir Mishra & Muse Architecture Practice',
     status: 'Framework Suite',
     summary: 'A collection of proprietary decision frameworks, engineering maturity models, and team composition matrices designed by MuseCS for enterprise CTOs.',
     key_findings: [
@@ -272,7 +272,7 @@ MuseCS evaluates enterprise software squads across 4 maturity levels:
     title: 'South African Software Developer Salary & Rate Benchmark Report 2026',
     category: 'Market Intelligence & Salary Benchmarks',
     publish_date: 'February 2026',
-    author: 'Clinton Powell, Founder & Managing Director',
+    author: 'Sudhir Mishra, Founder & Managing Director',
     status: 'Published',
     summary: 'An exhaustive analysis of software engineering compensation, contracting daily rates, and remote talent dynamics across Johannesburg, Cape Town, and Durban.',
     key_findings: [

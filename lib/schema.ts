@@ -1,3 +1,5 @@
+import { MUSE_ENTITY_CONFIG } from './entity-config';
+
 export interface OrganizationSchema {
   name: string;
   url: string;
@@ -16,49 +18,47 @@ export interface OrganizationSchema {
 }
 
 export const MUSE_ORGANIZATION: OrganizationSchema = {
-  name: 'Muse Consultancy Services',
-  url: 'https://www.musecs.com',
-  logo: 'https://www.musecs.com/logo.png',
-  description: 'Elite South African software engineering consultancy specializing in custom software development, dedicated development teams, and software development team augmentation.',
-  telephone: '+27 11 881 5460',
-  email: 'sales@musecs.com',
+  name: MUSE_ENTITY_CONFIG.tradingName,
+  url: MUSE_ENTITY_CONFIG.canonicalUrl,
+  logo: MUSE_ENTITY_CONFIG.logoUrl,
+  description: MUSE_ENTITY_CONFIG.descriptions.short,
+  telephone: MUSE_ENTITY_CONFIG.contact.primaryPhone,
+  email: MUSE_ENTITY_CONFIG.contact.salesEmail,
   address: {
-    streetAddress: 'Sandton City, West Tower, 5th Floor',
-    addressLocality: 'Johannesburg',
-    addressRegion: 'Gauteng',
-    postalCode: '2196',
-    addressCountry: 'ZA',
+    streetAddress: MUSE_ENTITY_CONFIG.address.streetAddress,
+    addressLocality: MUSE_ENTITY_CONFIG.address.addressLocality,
+    addressRegion: MUSE_ENTITY_CONFIG.address.addressRegion,
+    postalCode: MUSE_ENTITY_CONFIG.address.postalCode,
+    addressCountry: MUSE_ENTITY_CONFIG.address.addressCountry,
   },
-  sameAs: [
-    'https://linkedin.com/company/musecs',
-    'https://github.com/musecs'
-  ]
+  sameAs: MUSE_ENTITY_CONFIG.sameAsVerified
 };
 
 export function generateOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    '@id': 'https://www.musecs.com/#organization',
-    'name': MUSE_ORGANIZATION.name,
-    'url': MUSE_ORGANIZATION.url,
-    'logo': MUSE_ORGANIZATION.logo,
-    'image': MUSE_ORGANIZATION.logo,
-    'description': MUSE_ORGANIZATION.description,
-    'telephone': MUSE_ORGANIZATION.telephone,
-    'email': MUSE_ORGANIZATION.email,
+    '@id': `${MUSE_ENTITY_CONFIG.canonicalUrl}/#organization`,
+    'name': MUSE_ENTITY_CONFIG.legalName,
+    'alternateName': MUSE_ENTITY_CONFIG.tradingName,
+    'url': MUSE_ENTITY_CONFIG.canonicalUrl,
+    'logo': MUSE_ENTITY_CONFIG.logoUrl,
+    'image': MUSE_ENTITY_CONFIG.logoUrl,
+    'description': MUSE_ENTITY_CONFIG.descriptions.medium,
+    'telephone': MUSE_ENTITY_CONFIG.contact.primaryPhone,
+    'email': MUSE_ENTITY_CONFIG.contact.salesEmail,
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': MUSE_ORGANIZATION.address.streetAddress,
-      'addressLocality': MUSE_ORGANIZATION.address.addressLocality,
-      'addressRegion': MUSE_ORGANIZATION.address.addressRegion,
-      'postalCode': MUSE_ORGANIZATION.address.postalCode,
-      'addressCountry': MUSE_ORGANIZATION.address.addressCountry,
+      'streetAddress': MUSE_ENTITY_CONFIG.address.streetAddress,
+      'addressLocality': MUSE_ENTITY_CONFIG.address.addressLocality,
+      'addressRegion': MUSE_ENTITY_CONFIG.address.addressRegion,
+      'postalCode': MUSE_ENTITY_CONFIG.address.postalCode,
+      'addressCountry': MUSE_ENTITY_CONFIG.address.addressCountry,
     },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': '-26.1076',
-      'longitude': '28.0567'
+      'latitude': MUSE_ENTITY_CONFIG.address.latitude,
+      'longitude': MUSE_ENTITY_CONFIG.address.longitude
     },
     'areaServed': [
       {
@@ -71,17 +71,8 @@ export function generateOrganizationSchema() {
       }
     ],
     'priceRange': '$$$$',
-    'knowsAbout': [
-      'Software Development',
-      'Software Development Team Augmentation',
-      'Dedicated Development Teams',
-      'Custom Software Architecture',
-      'Cloud Native Systems',
-      'AI Software Development',
-      'Legacy System Modernization',
-      'Enterprise Software Engineering'
-    ],
-    'sameAs': MUSE_ORGANIZATION.sameAs
+    'knowsAbout': MUSE_ENTITY_CONFIG.primaryServices,
+    'sameAs': MUSE_ENTITY_CONFIG.sameAsVerified
   };
 }
 

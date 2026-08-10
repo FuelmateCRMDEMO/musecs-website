@@ -4,24 +4,25 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Send, CheckCircle2, ShieldCheck, AlertCircle, Clock, Users, Code2, Building2, Terminal, ArrowRight } from 'lucide-react';
 
+function getInitialRequirementType(typeParam: string | null): string {
+  if (!typeParam) return 'Software Development';
+  const lower = typeParam.toLowerCase();
+  if (lower.includes('aug') || lower.includes('team') || lower.includes('developer')) {
+    return 'Software Development Team Augmentation';
+  }
+  if (lower.includes('arch') || lower.includes('audit') || lower.includes('consulting')) {
+    return 'Software Architecture & System Audit';
+  }
+  return 'Software Development';
+}
+
 function ContactFormContent() {
   const searchParams = useSearchParams();
   const initialType = searchParams.get('type');
 
-  const [requirementType, setRequirementType] = useState<string>('Software Development');
-  
-  useEffect(() => {
-    if (initialType) {
-      const lower = initialType.toLowerCase();
-      if (lower.includes('aug') || lower.includes('team') || lower.includes('developer')) {
-        setRequirementType('Software Development Team Augmentation');
-      } else if (lower.includes('arch') || lower.includes('audit') || lower.includes('consulting')) {
-        setRequirementType('Software Architecture & System Audit');
-      } else {
-        setRequirementType('Software Development');
-      }
-    }
-  }, [initialType]);
+  const [selectedType, setSelectedType] = useState<string | null>(null);
+  const requirementType = selectedType ?? getInitialRequirementType(initialType);
+  const setRequirementType = (type: string) => setSelectedType(type);
 
   // Form State
   const [fullName, setFullName] = useState('');

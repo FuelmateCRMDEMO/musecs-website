@@ -25,9 +25,9 @@ export default function HireVsAugmentPage() {
     'url': 'https://www.musecs.com/insights/decision-guides/hire-vs-augment-software-developers/',
     'author': {
       '@type': 'Person',
-      'name': 'Clinton Powell',
+      'name': 'Sudhir Mishra',
       'jobTitle': 'Founder & Managing Director',
-      'url': 'https://www.musecs.com/about/people/clinton-powell/'
+      'url': 'https://www.musecs.com/about/people/sudhir-mishra/'
     },
     'publisher': {
       '@type': 'Organization',

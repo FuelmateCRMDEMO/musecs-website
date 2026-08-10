@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, MessageSquare } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -29,7 +29,27 @@ export function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <Mail size={14} className="text-accent" />
-              <span>sales@musecs.com</span>
+              <span>info@musecs.com</span>
+            </div>
+            <div className="flex items-center gap-4 pt-2">
+              <a 
+                href="https://linkedin.com/company/musecs" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-1.5 text-gray-300 hover:text-accent transition-colors"
+              >
+                <Linkedin size={14} className="text-accent" />
+                <span>LinkedIn</span>
+              </a>
+              <a 
+                href="https://wa.me/27719255128" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-1.5 text-gray-300 hover:text-accent transition-colors"
+              >
+                <MessageSquare size={14} className="text-accent" />
+                <span>WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
